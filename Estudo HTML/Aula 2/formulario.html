@@ -11,14 +11,18 @@
 
 		<form name="fcad" action="" method="post">
 			
-			<!-- Atributo for sempre associado ao id do elemento do formulário -->
-			<label for="nome">Nome completo:</label>
-			<input type="text" name="nome" id="nome" />
-			<br />
+			<fieldset>
+				<legend>Dados de autentificação</legend>
 
-			<label for="senha">Senha:</label>
-			<input type="password" name="senha" id="senha" />
-			<br />
+				<!-- Atributo for sempre associado ao id do elemento do formulário -->
+				<label for="nome">Nome completo:</label>
+				<input type="text" name="nome" id="nome" />
+				<br />
+
+				<label for="senha">Senha:</label>
+				<input type="password" name="senha" id="senha" />
+				<br />
+			</fieldset>
 
 			<!-- Sempre deve ter o mesmo nome, porem ids diferentes -->
 			<label>Sexo:</label>
@@ -80,8 +84,11 @@
 			<hr>
 
 			<input type="reset" name="acao" id="acaol" value="Limpando!" />
+
 			<input type="button" name="acao" id="acaos" value="Salvar!" />
+
 			<input type="image" src="imagens/icone.png" name="acao" id="acaoi" width="3%"/>
+
 			<input type="submit" name="acao" id="acaoe" value="Vai planeta!" />
 			<hr>
 
