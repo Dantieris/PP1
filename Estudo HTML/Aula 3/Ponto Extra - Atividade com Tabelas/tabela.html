@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML - Estudo de tabela</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<hr>
+
+		<table border = "1">
+			<thead>
+				<tr>
+					<th>Matricula</th>
+					<th>Nome</th>
+					<th>Curso</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>Todos</td>
+					<td>Todos</td>
+					<td>Todos</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>0001</td>
+					<td>João da Silva</td>
+					<td>Informática</td>
+				</tr>
+				<tr>
+					<td>0002</td>
+					<td>Maria Oliveira</td>
+					<td>Informática</td>
+				</tr>
+				<tr>
+					<td>0001</td>
+					<td>Pedro Pereira</td>
+					<td>Redes</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr>
+		<table border="1">
+			<tr>
+				<th>Aluno</th>
+				<th>Curso</th>
+				<th colspan="3">Média</th>
+				<th rowspan="2">Situação</th>
+			</tr>
+			<tr>
+				<td rowspan="2">João</td>
+				<td rowspan="2">Curso</td>
+				<td>Nota 1</td>
+				<td>Nota 2</td>
+				<td>Nota 3</td>
+			</tr>
+			<tr>
+				<td>9,5</td>
+				<td>10,0</td>
+				<td>8,0</td>
+				<td>Aprovado</td>
+			</tr>
+		</table>
+	</body>
+</html>
