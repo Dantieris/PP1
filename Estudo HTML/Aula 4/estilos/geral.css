@@ -1,0 +1,73 @@
+body {
+	color: blue;
+	background-color: #00BFFF;
+	background-image: url("../imagens/joel.jpg");
+	background-repeat: no-repeat;
+	/* repeat (padrão), repeat-x, repeat-y, no-repeat */
+	background-position: top;
+	/* left. right, center, top (padrão), bottom */
+	background-attachment: fixed;
+	/* scroll (padrão), fixed */
+	
+}
+
+img {
+	border: 4px dotted #00FF00;
+	/* largura estilo cor */
+	margin: 20px 10px;
+	/* none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset */
+}
+
+p {
+	width: 50%;
+	font-family: arial, verdana, sans-serif;
+	/*
+		nomes compostos devem usar arpas duplas
+		ex.: "Times New Roman".
+	*/
+	font-size: 32px;
+	text-indent: 80px;
+	text-transform: capitalize;
+}
+
+/* CSS3 Cuidado ao utilizar */
+@font-face {
+	font-family: "la Chatte a Maman";
+	src: url("fontes/la Chatte a Maman.ttf");
+}
+
+h1 {
+	font: 100px "la Chatte a Maman";
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+ul li {
+	list-style-image: url(../imagens/buzz.png);
+}
+
+.destaque {
+	font-family: ravie;
+	color: #FF3E96;
+	text-align: center;
+	/* left (padrão) right center justify*/
+	letter-spacing: 35px;
+	word-spacing: 20px;
+	line-height: 100px;
+}
+
+a {
+	color: #8B008B;
+	margin-right: 30px;
+	line-height: 30px;
+	font-family: arial;
+	font-size: 50px;
+	text-decoration: none;
+	/* overline, underline, line-through */
+}
+
+a:hover {
+	color: #90EE90;
+	text-decoration: line-through;
+	font-weight: bold;
+}

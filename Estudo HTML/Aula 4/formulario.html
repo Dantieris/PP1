@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML - Formulários</title>
+		<meta charset="UTF-8" />
+
+		<style type="text/css">
+			@import "estilos/geral.css";
+		</style>
+	</head>
+	<body>
+
+		<a href="https://www.google.com.br">GOOGLE.COM</a>
+
+		<h1 class="destaque">GRANDE PENSADOR</h1>
+		<hr>
+
+		<img src="imagens/joel.jpg">
+
+		<form name="fcad" action="" method="post">
+			
+			<fieldset>
+				<legend>Dados de autentificação</legend>
+
+				<!-- Atributo for sempre associado ao id do elemento do formulário -->
+				<label for="nome">Nome completo:</label>
+				<input type="text" name="nome" id="nome" />
+				<br />
+
+				<label for="senha">Senha:</label>
+				<input type="password" name="senha" id="senha" />
+				<br />
+			</fieldset>
+
+			<!-- Sempre deve ter o mesmo nome, porem ids diferentes -->
+			<label>Sexo:</label>
+			<input type="radio" name="sexo" id="sexof" value="F" />
+			<label for"sexof">Feminino</label>
+			<input type="radio" name="sexo" id="sexom" value="M" checked />
+			<label for"sexom">Masculino</label>
+			<br /><br />
+
+			<label>Turno:</label>
+			<input type="checkbox" name="turno" id="turnom" value"M" checked />
+			<label for"turnom">Manhã</label>
+			<input type="checkbox" name="turno" id="turnot" value"T" />
+			<label for"turnot">Tarde</label>
+			<input type="checkbox" name="turno" id="turnon" value"N" />
+			<label for"turnon">Noite</label>
+			<br /> <br />
+
+			<label for="arquivo">Arquivo</label>
+			<input type="file" name="arquivo" id="arquivo" accept="image/*" />
+			<hr>
+
+			<label for"estado">Estado:</label>
+			<select name="estado" id="estado">
+				<option value="0">Selecione...</option>
+				<option value="RR">Roraima</option>
+				<option value="BA">Bahia</option>
+				<option value="AP">Amapá</option>
+				<option value="TO">Tocantins</option>
+			</select>
+			<br /> <br />
+
+			<label for"estadog">Estado:</label>
+			<select name="estado" id="estadog">
+				<option value="0">Selecione...</option>
+				<optgroup label="Região Norte">
+					<option value="AP">Amapá</option>
+					<option value="RR">Roraima</option>
+					<option value="TO">Tocantins</option>
+				</optgroup>
+				<optgroup label="Região Nordeste">
+					<option value="BA">Bahia</option>
+				</optgroup>				
+			</select>
+			<br /> <br />
+
+			<label for"estadom">Estado:</label>
+			<select name="estado" id="estadom" multiple>
+				<option value="0">Selecione...</option>
+				<option value="RR">Roraima</option>
+				<option value="BA">Bahia</option>
+				<option value="AP">Amapá</option>
+				<option value="TO">Tocantins</option>
+			</select>
+			<hr>
+
+			<label for"descricao">Descrição:</label>
+			<textarea name="descricao" id="descricao" cols="40" rows"5" maxlength="20">Olá Tude bem?</textarea>
+			<hr>
+
+			<input type="reset" name="acao" id="acaol" value="Limpando!" />
+
+			<input type="button" name="acao" id="acaos" value="Salvar!" />
+
+			<input type="image" src="imagens/icone.png" name="acao" id="acaoi" width="3%"/>
+
+			<input type="submit" name="acao" id="acaoe" value="Vai planeta!" />
+			<hr>
+
+		</form>
+		<p>
+			When checking joel-ipsum.zz.mu we looked at many factors, such as the ownership details, location, popularity and other sites relating to reviews, threats, phishing etc. Although a site like may have a high trust rating, it's worth just checking the countries involved as these could indicate that goods would be shipped from abroad rather than your home country.
+		</p>
+
+		<ul>
+			<li>Nome: Duke Java</li>
+			<li>Endereço: Vale do Silício, EUA</li>
+			<li>Telefone: 00xx 91 555-4512 </li>
+			<li>E-mail: duke@javapro.com</li>
+		</ul>
+
+	</body>
+</html>
