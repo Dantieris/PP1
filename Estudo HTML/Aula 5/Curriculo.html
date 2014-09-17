@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Atividade Prática - HTML - Currículo na Web</title>
+		<meta charset="UTF-8">
+
+		<style type="text/css">
+			@import "estilos/estilo.css";
+		</style>
+	</head>
+	<body>
+		<nav>
+			<h1>Atividade Prática - Curriculo na Web</h1>
+
+			<a href="#identificacao">Identificação</a>
+			<a href="#apresentacao">Apresentação</a>
+			<a href="#formacao">Formação</a>
+			<a href="#experiencia">Experiência</a>
+			<a href="#conhecimentos">Conhecimentos</a>
+			<a href="#contato">Contato</a>
+		</nav>
+		<br /> <br />
+
+		<img src="imagens/perfil.png" height="150" alt="Imagem de Perfil"/>
+
+		<br /> <br />
+
+		<h2 id="identificacao">Identificação</h2>
+
+		<ul>
+			<li>Nome: Duke Java</li>
+			<li>Endereço: Vale do Silício, EUA</li>
+			<li>Telefone: 00xx 91 555-4512 </li>
+			<li>E-mail: duke@javapro.com</li>
+		</ul>
+
+		<h2 id="apresentacao">Apresentação</h2>
+
+		<p>
+			Quando a Sun anunciou que o Java SE e Java ME seria lançado sob uma licença de software livre (GNU General Public), eles lançaram os gráficos Duke sob a licença BSD livre ao mesmo tempo. A nova personalidade Duke é criado a cada ano. Por exemplo, em julho de 2011 "Future Tech Duke" incluiu um nariz maior, um jetpack, e as asas azuis.
+		</p>
+
+		<h2 id="formacao">Formação Acadêmica</h2>
+
+		<ol type="A">
+			<li>Em se formou em 1977 Bacharel em Ciência da Computação pela Universidade de Calgary</li>
+			<li>Em 1983 tornou-se PhD em Ciência da Computação pela Universidade Carnegie Mellon</li>
+		</ol>
+
+		<h2 id="experiencia">Experiência Profissional</h2>
+
+		<dl>
+			<dt>Primeira Experiência</dt>
+			<dd>Criador da Linguagem Java.</dd>
+			<dt>Segunda Experiência</dt>
+			<dd>Programou a versão original do editor de texto Emacs para UNIX</dd>
+		</dl>
+
+		<h2 id="conhecimentos">Conhecimentos</h2>
+
+		<table>
+			<tr class="titulo">
+				<td>Assunto</td>
+				<td>Grau de Conhecimento</td>
+			</tr>
+			<tr>
+				<td>Programação em Java</td>
+				<td>Avançado</td>
+			</tr>
+			<tr>
+				<td>Escrever Livros</td>
+				<td>Avançado</td>
+			</tr>
+			<tr>
+				<td>Desenvolver Compiladores</td>
+				<td>Avançado</td>
+			</tr>
+		</table>
+
+		<h2 id="contato">Contato</h2>
+
+		<form name="contato" action="acao" method="post">
+			<fieldset>
+				<legend>Entre em Contato!</legend>
+
+				<br />
+
+				<label for="nome">Nome completo:</label> <br />
+				<input type="text" name="nome" id="nome" /> <br /> <br />
+
+				<label for="estado">Estado:</label> <br />
+				<select name="estado" id="estado">
+					<option value="0">Selecione...</option>
+					<optgroup label="Região Norte">
+						<option value="AP">Amapá</option>
+						<option value="RR">Roraima</option>
+						<option value="TO">Tocantins</option>
+					</optgroup>
+					<optgroup label="Região Nordeste">
+						<option value="BA">Bahia</option>
+					</optgroup>				
+				</select>
+				<br /> <br />
+
+				<label>Contato:</label> <br />
+				<input type="radio" name="contato" id="contatos" value="sugestoes">
+				<label for="contatos">Sugestões</label>
+				<input type="radio" name="contato" id="contatoc" value="comentario">
+				<label for="contatoc">Comentário</label>
+				<input type="radio" name="contato" id="contatov" value="vaga">
+				<label for="contatov">Vaga de Emprego</label>
+				<br /> <br />
+
+				<label for="mensagem">Mensagem:</label> <br />
+				<textarea name="mensagem" id="mensagem" cols="40" rows="5" maxlength="30"></textarea>
+				<br /> <br />
+
+				<input type="reset" name="acao" id="acaol" value="Enviar" />
+
+			</fieldset>
+		</form>
+	</body>
+</html>
