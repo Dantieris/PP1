@@ -1,0 +1,10 @@
+ {
+     "name": "dantieris/dantieris",
+     "authors": [
+         {
+             "name": "Dantiéris Castilhos Rabelini",
+             "email": "dantieris.rabelini@moovin.com.br"
+         }
+     ],
+     "require": {}
+ }
